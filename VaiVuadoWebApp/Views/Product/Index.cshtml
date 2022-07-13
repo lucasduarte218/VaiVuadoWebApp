@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Product List";
+}
+
+
+
+
+<div class="text-center>">
+    <h1 class="text-center"> Product List</h1>
+    <br>
+    <center> <a class="btn btn-success btn-lg" role="button" asp-controller="Product" asp-action="Create">Create product</a></center>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col">
+                    <div class="">
+
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>balanca</td>
+                <td>balanca de cozinha ate 10kgs</td>
+                <td>utilitarios</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-warning" asp-controller="Product" asp-action="Edit">Edit</a>
+                        <div class="btn-group" role="group">
+                            
+                            <a role="button" class="btn btn-danger" asp-controller="Product" asp-action="DeleteConfirmation">Del</a>
+                        </div>
+</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Placa de vídeo PNY 1060gb</td>
+                <td> PNY10606GB 1800Mhz</td>
+                <td>eletronicos</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-warning"asp-controller="Product"asp-action="Edit">Edit</a>
+                        <a role="button" class="btn btn-danger"asp-controller="Product"asp-action="DeleteConfirmation">Del</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Lilica Repitilica greenday</td>
+                <td>Lilica repitilica greenday tamanho GG</td>
+                <td>Roupas</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-warning" asp-controller="Product" asp-action="Edit">Edit</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Product" asp-action="DeleteConfirmation">Del</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
